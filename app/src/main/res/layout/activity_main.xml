@@ -1,0 +1,74 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="150dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="21dp"
+        app:srcCompat="@drawable/uberlogo" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="126dp"
+        android:layout_height="57dp"
+        android:layout_below="@+id/txtPasswordMain"
+        android:layout_alignStart="@+id/txtPasswordMain"
+        android:layout_alignEnd="@+id/txtPasswordMain"
+        android:layout_marginStart="38dp"
+        android:layout_marginTop="92dp"
+        android:layout_marginEnd="44dp"
+        android:onClick="logIn"
+        android:text="Log In" />
+
+    <EditText
+        android:id="@+id/txtUsernameMain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView"
+        android:layout_alignStart="@+id/imageView"
+        android:layout_alignEnd="@+id/imageView"
+        android:layout_marginStart="82dp"
+        android:layout_marginTop="79dp"
+        android:layout_marginEnd="88dp"
+        android:ems="10"
+        android:hint="Username"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/txtPasswordMain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtUsernameMain"
+        android:layout_alignStart="@+id/txtUsernameMain"
+        android:layout_alignEnd="@+id/txtUsernameMain"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="39dp"
+        android:layout_marginEnd="-2dp"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_below="@+id/button"
+        android:layout_alignStart="@+id/button"
+        android:layout_alignEnd="@+id/button"
+        android:layout_marginStart="-3dp"
+        android:layout_marginTop="42dp"
+        android:layout_marginEnd="-2dp"
+        android:onClick="signUp"
+        android:text="sign Up" />
+
+</RelativeLayout>
